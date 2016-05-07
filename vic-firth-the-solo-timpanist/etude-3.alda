@@ -1,0 +1,59 @@
+# Etude #3 from Vic Firth's 'The Solo Timpanist'
+
+# FIXME: make (de)crescendos more fluid
+# FIXME: friendly dynamics (e.g. (mf) instead of (vol 70))
+# FIXME: friendly tremolo?
+# FIXME: be able to express tempo in terms of (something other than quarter
+#        note) = (number)
+
+timpani:
+  # 9/8 section
+  (tempo! 69)
+  (vol 50) o3 c4 < g8 > c4 < g8 > c8 c < g | > e4 c8 e c c e4 e8 |
+  o2 r8 g > c e c e (vol 50) c32*12 |
+                    (vol 70) c32*12
+                    (vol 90) c32*12 (vol 99) c8 c16 e < g8 |
+  o3 c8 < g > e c e < g g16*4 g8 | > c8. c16 c8 c16 < g > e c < g8 r g g |
+  o3 e16 c < g > c e c < g8 g g r4 r8 | r4 r8 r4 r8 o2 g8 g16 b > d8 |
+  [o2 g8 g16 b > d8]*2 d d d16 < g | b*6 (vol 90) b32*12 (vol 80) b32*12 |
+  (vol 70) r16 b > d8 < b r16 b > d8 < g {b b b} b b |
+  r16 b b g r g > d d r < b > d < b r8 > d < g |
+  (vol 90) [{g b > d} < b r]*2 r4 > d16 d |
+  [o3 d d d < b > d < g]*2 b g > d8 r || [r4.*3]*2 ||
+
+  # 3/2 section, dotted-quarter = half
+  (tempo! 92) # 69 bpm * 4/3
+  o3 f8 f16 f f8 c c16 c8 c16 c8 c < a16 > c f c c8 c |
+  r4 < a24*6 r4 > c24*6 r4 f24*6 |
+  {r < a > c}2 {r c f} {r {c c} c} |
+
+  # 9/8 section, half = dotted-quarter
+  (tempo! 69) # 92 bpm * 3/4
+  (vol 90) o3 f16 f c8 < a > f32*12 f16 f c8 < a |
+  [a8 a16 > c f8 <]*2 r > c c |
+  f16 f f f f f  f c f < a > f c  {f c f}8 < {a > f c} f || [r4.*3]*2 ||
+
+  # 3/4 section
+  (tempo! 112)
+  (key-sig "b- e- a-")
+  (vol 70) o2 b4 g > e | r8. < b16 b8 b b32*8 | > e16 e e8 e e16 < b > e8 e |
+  r < g16 g b4 g16 g > e8 |
+
+  # fp < f over dotted half note
+  (vol 90) e (vol 50) e32*3 (vol 60) e*4
+  (vol 65) e*4 (vol 70) e*4
+  (vol 75) e*4 (vol 80) e*4 |
+
+  (vol 90) [o2 g8 g16 g  [g b > e < b]*2 |]*2
+
+  # p < f > over dotted half note
+  (vol 50) o2 b32*6 (vol 70) b*6 (vol 90) b*6 (vol 80) b*6
+
+  (vol 70) > e12 e e < g g g > e e e | < b b b g b > e < b8 b || r2.*2 ||
+
+  (key-sig "")
+  (vol 90)
+  o3 [c8. < g16 >]*2 c16 c < g g | > e8. c16 e c c c e8. e16 |
+  o2 r16 g > c e  c < g > c e (vol 90) c32*8 (vol 93) c*8 (vol 96) c*8  e8 e16 e |
+  < g16 g g8  g32*16 | > c*8 c8
+
